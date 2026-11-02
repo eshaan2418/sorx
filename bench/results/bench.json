@@ -1,0 +1,16 @@
+{
+  "frames": 463653,
+  "note": "cycle = parent accept + risk checks + child + partial fill + IOC done; journal kept in memory",
+  "oms_order_cycles_per_sec": 564386.7183437959,
+  "replay_frames_per_sec": 71750.67325028592,
+  "sor_plan_collect_and_sort_ns_by_btc_qty": {
+    "0.1": 48491.521,
+    "10": 45672.4165,
+    "2": 48920.1875
+  },
+  "sor_plan_ns_by_btc_qty": {
+    "0.1": 1063.55835,
+    "10": 2945.12295,
+    "2": 2633.32915
+  }
+}

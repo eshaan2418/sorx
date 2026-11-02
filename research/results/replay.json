@@ -1,0 +1,122 @@
+{
+  "consolidated_crossed": {
+    "BTC-USD": {
+      "crossed_fraction": 1,
+      "median_cross_bps": 2.6239337383637817,
+      "p90_cross_bps": 4.160541460720424,
+      "samples": 2374
+    },
+    "ETH-USD": {
+      "crossed_fraction": 1,
+      "median_cross_bps": 2.2315763680436085,
+      "p90_cross_bps": 3.844624734044011,
+      "samples": 2374
+    }
+  },
+  "duration_s": 2399.867834667,
+  "engine": {
+    "checksum_fail": 0,
+    "checksum_ok": 185328,
+    "decode_errors": 0,
+    "deltas": 440704,
+    "resync_by_reason": {},
+    "resyncs": 0,
+    "snapshots": 10
+  },
+  "frames": 463653,
+  "replay_s": 5.910722417,
+  "venues_sampled_1hz": {
+    "BTC-USD": [
+      {
+        "venue": "kraken",
+        "live_fraction": 1,
+        "median_spread_bps": 0.012824508148767677,
+        "median_bid_depth_10bps": 2.7469498300000006,
+        "median_ask_depth_10bps": 8.57456785,
+        "at_best_bid_frac": 0.062342038753159225,
+        "at_best_ask_frac": 0.2371524852569503,
+        "alone_at_best_bid_frac": 0.062342038753159225,
+        "alone_at_best_ask_frac": 0.2358887952822241
+      },
+      {
+        "venue": "coinbase",
+        "live_fraction": 1,
+        "median_spread_bps": 0.0012826151385425533,
+        "median_bid_depth_10bps": 20.95947926,
+        "median_ask_depth_10bps": 18.001544740000007,
+        "at_best_bid_frac": 0.0021061499578770007,
+        "at_best_ask_frac": 0.7527379949452401,
+        "alone_at_best_bid_frac": 0.0021061499578770007,
+        "alone_at_best_ask_frac": 0.7514743049705139
+      },
+      {
+        "venue": "bitstamp",
+        "live_fraction": 0.9983150800336984,
+        "median_spread_bps": 0.0012825644724046015,
+        "median_bid_depth_10bps": 19.727309530000003,
+        "median_ask_depth_10bps": 18.348767690000003,
+        "at_best_bid_frac": 0.05265374894692502,
+        "at_best_ask_frac": 0.011373209772535805,
+        "alone_at_best_bid_frac": 0.05265374894692502,
+        "alone_at_best_ask_frac": 0.011373209772535805
+      },
+      {
+        "venue": "gemini",
+        "live_fraction": 1,
+        "median_spread_bps": 0.0012822079398233655,
+        "median_bid_depth_10bps": 6.0344239900000005,
+        "median_ask_depth_10bps": 2.52482208,
+        "at_best_bid_frac": 0.8828980623420387,
+        "at_best_ask_frac": 0,
+        "alone_at_best_bid_frac": 0.8828980623420387,
+        "alone_at_best_ask_frac": 0
+      }
+    ],
+    "ETH-USD": [
+      {
+        "venue": "kraken",
+        "live_fraction": 1,
+        "median_spread_bps": 0.043711834103454805,
+        "median_bid_depth_10bps": 30.18455458,
+        "median_ask_depth_10bps": 51.59169035,
+        "at_best_bid_frac": 0.02401010951979781,
+        "at_best_ask_frac": 0.12805391743892164,
+        "alone_at_best_bid_frac": 0.02401010951979781,
+        "alone_at_best_ask_frac": 0.11962931760741365
+      },
+      {
+        "venue": "coinbase",
+        "live_fraction": 1,
+        "median_spread_bps": 0.043728654950392354,
+        "median_bid_depth_10bps": 414.15438084,
+        "median_ask_depth_10bps": 550.0419018599999,
+        "at_best_bid_frac": 0.0021061499578770007,
+        "at_best_ask_frac": 0.6857624262847515,
+        "alone_at_best_bid_frac": 0.0021061499578770007,
+        "alone_at_best_ask_frac": 0.672704296545914
+      },
+      {
+        "venue": "bitstamp",
+        "live_fraction": 0.9983150800336984,
+        "median_spread_bps": 0.04371603810282565,
+        "median_bid_depth_10bps": 491.85951700000015,
+        "median_ask_depth_10bps": 549.2904040000001,
+        "at_best_bid_frac": 0.006739679865206402,
+        "at_best_ask_frac": 0.2009267059814659,
+        "alone_at_best_bid_frac": 0.006739679865206402,
+        "alone_at_best_ask_frac": 0.19123841617523168
+      },
+      {
+        "venue": "gemini",
+        "live_fraction": 1,
+        "median_spread_bps": 0.04370151862831406,
+        "median_bid_depth_10bps": 97.95629000000004,
+        "median_ask_depth_10bps": 63.56949199999998,
+        "at_best_bid_frac": 0.9671440606571188,
+        "at_best_ask_frac": 0.0008424599831508003,
+        "alone_at_best_bid_frac": 0.9671440606571188,
+        "alone_at_best_ask_frac": 0.0008424599831508003
+      }
+    ]
+  }
+}

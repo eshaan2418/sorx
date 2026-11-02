@@ -1,0 +1,25 @@
+$ bin/sorx sim -dir testdata/sample -warmup 20s -every 10s -horizon 10s -strategies single:gemini,best,sor,twap | jq ...
+{"strategy":"single:gemini","symbol":"BTC-USD","size":0.5,"n":2,"fill":1,"is_bps":11.2,"slip_bps":1.2,"venues":1}
+{"strategy":"single:gemini","symbol":"BTC-USD","size":2,"n":2,"fill":1,"is_bps":13.79,"slip_bps":3.79,"venues":1}
+{"strategy":"single:gemini","symbol":"BTC-USD","size":10,"n":2,"fill":0.9199447675,"is_bps":29.19,"slip_bps":21.51,"venues":1}
+{"strategy":"single:gemini","symbol":"ETH-USD","size":10,"n":2,"fill":1,"is_bps":11.52,"slip_bps":1.52,"venues":1}
+{"strategy":"single:gemini","symbol":"ETH-USD","size":50,"n":2,"fill":1,"is_bps":14,"slip_bps":4,"venues":1}
+{"strategy":"single:gemini","symbol":"ETH-USD","size":250,"n":2,"fill":1,"is_bps":24.49,"slip_bps":14.49,"venues":1}
+{"strategy":"best","symbol":"BTC-USD","size":0.5,"n":2,"fill":1,"is_bps":10.05,"slip_bps":0.05,"venues":1}
+{"strategy":"best","symbol":"BTC-USD","size":2,"n":2,"fill":1,"is_bps":9.41,"slip_bps":-0.59,"venues":1.5}
+{"strategy":"best","symbol":"BTC-USD","size":10,"n":2,"fill":1,"is_bps":12.45,"slip_bps":2.45,"venues":1.5}
+{"strategy":"best","symbol":"ETH-USD","size":10,"n":2,"fill":1,"is_bps":11.52,"slip_bps":1.52,"venues":1}
+{"strategy":"best","symbol":"ETH-USD","size":50,"n":2,"fill":1,"is_bps":11.62,"slip_bps":1.62,"venues":1}
+{"strategy":"best","symbol":"ETH-USD","size":250,"n":2,"fill":1,"is_bps":17.44,"slip_bps":7.44,"venues":1}
+{"strategy":"sor","symbol":"BTC-USD","size":0.5,"n":2,"fill":1,"is_bps":8.79,"slip_bps":-1.21,"venues":1.5}
+{"strategy":"sor","symbol":"BTC-USD","size":2,"n":2,"fill":1,"is_bps":9.24,"slip_bps":-0.76,"venues":2.5}
+{"strategy":"sor","symbol":"BTC-USD","size":10,"n":2,"fill":1,"is_bps":10.58,"slip_bps":0.58,"venues":3}
+{"strategy":"sor","symbol":"ETH-USD","size":10,"n":2,"fill":1,"is_bps":10.45,"slip_bps":0.45,"venues":3}
+{"strategy":"sor","symbol":"ETH-USD","size":50,"n":2,"fill":1,"is_bps":10.57,"slip_bps":0.57,"venues":3.5}
+{"strategy":"sor","symbol":"ETH-USD","size":250,"n":2,"fill":1,"is_bps":11.25,"slip_bps":1.25,"venues":3.5}
+{"strategy":"twap","symbol":"BTC-USD","size":0.5,"n":2,"fill":1,"is_bps":8.57,"slip_bps":-1.43,"venues":1.5}
+{"strategy":"twap","symbol":"BTC-USD","size":2,"n":2,"fill":1,"is_bps":8.5,"slip_bps":-1.5,"venues":2}
+{"strategy":"twap","symbol":"BTC-USD","size":10,"n":2,"fill":1,"is_bps":9.79,"slip_bps":-0.21,"venues":2.5}
+{"strategy":"twap","symbol":"ETH-USD","size":10,"n":2,"fill":1,"is_bps":11.05,"slip_bps":1.05,"venues":3.5}
+{"strategy":"twap","symbol":"ETH-USD","size":50,"n":2,"fill":1,"is_bps":11.2,"slip_bps":1.2,"venues":3.5}
+{"strategy":"twap","symbol":"ETH-USD","size":250,"n":2,"fill":0.99951525058,"is_bps":9.23,"slip_bps":-0.76,"venues":3.5}

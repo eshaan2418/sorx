@@ -1,0 +1,6 @@
+bin/
+*.prof
+.DS_Store
+NOTES.md
+internal/*/testdata/fuzz/
+internal/mm/*/testdata/fuzz/

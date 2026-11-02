@@ -1,0 +1,45 @@
+name: CI
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+      - run: go build ./... && go vet ./...
+      - name: Test (race detector)
+        run: go test -race -count=1 ./...
+      - name: Simulate on the committed sample capture
+        run: |
+          go build -o bin/ ./cmd/...
+          bin/sorx replay -dir testdata/sample > /dev/null
+          bin/sorx sim -dir testdata/sample -warmup 20s -every 10s -horizon 10s | jq -e '[.runs[].oms_invariants] | all(. == "ok")'
+
+  fuzz:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+      - run: go test -run '^$' -fuzz FuzzOMS -fuzztime 45s ./internal/oms/
+      - run: go test -run '^$' -fuzz FuzzDecoders -fuzztime 45s ./internal/mm/venue/
+
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+      - run: test -z "$(gofmt -l .)"
+      - run: go vet ./...
